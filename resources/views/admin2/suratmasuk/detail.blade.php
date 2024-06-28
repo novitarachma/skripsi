@@ -16,13 +16,12 @@
                             <div class="invoice-head">
                                 <div class="row text-center">
                                     <div class="iv-left col-12">
-                                        <span>PEMERINTAH KOTA SURAKARTA</span>
+                                        <span>PT JASAMARGA PANDAAN TOL</span>
                                         <br>
-                                        <span>DINAS KEPEMUDAAN DAN OLAHRAGA</span>
+                                        <p>Kali Tengah, Karang Jati, Kec. Pandaan, Pasuruan, Jawa Timur 67156</p>
                                         <br>
-                                        <p>Jl. Adisucipto No. 1 Manahan Surakarta (0271) 742207 Pswt: Fax (0271) 729101 SURAKARTA 57139</p>
+                                        <h6><b>DISPOSISI SURAT MASUK PT JASAMARGA PANDAAN TOL</b></h6>
                                         <br>
-                                        <h6><b>DISPOSISI KEPALA DINAS KEPEMUDAAN DAN OLAHRAGA</b></h6>
                                     </div>
                                 </div>
                             </div>

@@ -32,10 +32,10 @@
                         @endif
                         @if ( auth()->user()->jabatan_id == '3')
                         <li class="active"><a href="{{ route('admin2.home.index') }}"><i class="ti-bar-chart-alt"></i> <span>Dashboard</span></a></li>
-                        <li><a href="{{ route('admin2.suratmasukadmin2.index')}}"><i class="ti-share"></i> <span>Surat Masuk</span></a></li>
-                        <li><a href="{{ route('admin2.suratkeluaradmin2.index')}}"><i class="ti-share-alt"></i> <span>Surat Keluar</span></a></li>
+                        <!-- <li><a href="{{ route('admin2.suratmasukadmin2.index')}}"><i class="ti-share"></i> <span>Surat Masuk</span></a></li> -->
+                        <!-- <li><a href="{{ route('admin2.suratkeluaradmin2.index')}}"><i class="ti-share-alt"></i> <span>Surat Keluar</span></a></li> -->
                         <li><a href="{{ route('admin2.historisuratadmin2.index')}}"><i class="ti-archive"></i> <span>Histori Surat Masuk</span></a></li>
-                        <li><a href="{{ route('admin2.historisuratkeluaradmin2.index')}}"><i class="ti-archive"></i> <span>Histori Surat Keluar</span></a></li>
+                        <!-- <li><a href="{{ route('admin2.historisuratkeluaradmin2.index')}}"><i class="ti-archive"></i> <span>Histori Surat Keluar</span></a></li> -->
                         <li><a href="{{ route('admin2.disposisisayaadmin2.index')}}"><i class="ti-bell"></i> <span>Disposisi Saya</span></a></li>
                         @endif
                         @if ( auth()->user()->jabatan_id == '4')

@@ -40,9 +40,14 @@
                                 <tr>
                                     <th>No</th>
                                     <th>No Agenda</th>
+                                    <th>Nomor Surat</th>
+                                    <th>Tanggal Pelaksanaan Kegiatan</th>
                                     <th>Tanggal Diterima</th>
                                     <th>Status</th>
-                                    <th>Instansi</th>
+                                    <th>Instansi Pengirim</th>
+                                    <th>Kategori</th>
+                                    <th>Klasifikasi</th>
+                                    <th>Kepada</th>
                                     <th>Perihal</th>
                                     <th>Action</th>
                                 </tr>
@@ -97,9 +102,14 @@
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex' , orderable: false, searchable: false},
                 {data: 'no_urut', name: 'no_urut'},
+                {data: 'no_surat', name: 'no_surat'},
+                {data: 'tanggal_surat', name: 'tanggal_surat'},
                 {data: 'h_tanggal_terima', name: 'h_tanggal_terima'},
                 {data: 'h_status', name: 'h_status'},
                 {data: 'dari_instansi', name: 'dari_instansi'},
+                {data: 'kategori_surat', name: 'kategori_surat'},
+                {data: 'klasifikasi', name: 'klasifikasi'},
+                {data: 'kepada', name: 'kepada'},
                 {data: 'perihal', name: 'perihal'},
                 {data: 'action', name: 'action'},
             ],
@@ -130,8 +140,8 @@
         $('#jabatan_bidang_id').html("");
         $('#karyawan_id').html("");
         $('#isi_disposisi').html("");
-        $('#tindakan_kadin').html("");
-        $('#catatan_kadin').html("");
+        $('#tindakan').html("");
+        $('#catatan').html("");
         $.ajax({
             url : "{{ route('admin2.suratmasukadmin2.store')}}",
             type: "POST",
@@ -156,10 +166,10 @@
                         $('#isi_disposisi').text(data.errors.isi_disposisi[0]);
                     }
                     if(data.errors.tindakan_kadin){
-                        $('#tindakan_kadin').text(data.errors.tindakan_kadin[0]);
+                        $('#tindakan').text(data.errors.tindakan_kadin[0]);
                     }
                     if(data.errors.catatan_kadin){
-                        $('#catatan_kadin').text(data.errors.catatan_kadin[0]);
+                        $('#catatan').text(data.errors.catatan_kadin[0]);
                     }
                 }
             },

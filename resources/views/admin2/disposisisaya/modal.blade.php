@@ -60,15 +60,10 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-12 mb-3">
-                            <label>Sifat</label>
-                            <select class="form-control" name="kategori_surat" readonly>
-                                <option value="">-- Pilih Sifat --</option>
-                                <option value="segera">Segera</option>
-                                <option value="sangat-segera">Sangat Segera</option>
-                                <option value="biasa">Biasa</option>
-                            </select>
+                            <label>File Lampiran</label>
+                            <input type="file" class="form-control" name="lampiran" placeholder="Masukkan Lampiran">
                             <span class="text-danger">
-                                <strong id="kategori_surat"></strong>
+                                <strong id="lampiran"></strong>
                             </span>
                         </div>
                         <div class="col-md-5 col-12 mb-3">

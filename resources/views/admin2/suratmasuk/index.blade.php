@@ -40,10 +40,14 @@
                                 <tr>
                                     <th>No</th>
                                     <th>No Agenda</th>
+                                    <th>Nomor Surat</th>
+                                    <th>Tanggal Pelaksanaan Kegiatan</th>
                                     <th>Tanggal Diterima</th>
                                     <th>Status</th>
-                                    <th>Instansi</th>
+                                    <th>Instansi Pengirim</th>
                                     <th>Kategori</th>
+                                    <th>Klasifikasi</th>
+                                    <th>Kepada</th>
                                     <th>Perihal</th>
                                     <th>Action</th>
                                 </tr>
@@ -60,7 +64,7 @@
     </div>
 </div>
 @include('admin2.suratmasuk.modal')
-@include('admin2.suratmasuk.modaldisposisi')
+<!-- @include('admin2.suratmasuk.modaldisposisi') -->
 
 <!-- main content area end -->
 @endsection
@@ -99,10 +103,14 @@
             columns: [
                 {data: 'DT_RowIndex', name: 'DT_RowIndex' , orderable: false, searchable: false},
                 {data: 'no_urut', name: 'no_urut'},
+                {data: 'no_surat', name: 'no_surat'},
+                {data: 'tanggal_surat', name: 'tanggal_surat'},
                 {data: 'h_tanggal_terima', name: 'h_tanggal_terima'},
                 {data: 'h_status', name: 'h_status'},
                 {data: 'dari_instansi', name: 'dari_instansi'},
                 {data: 'h_kategori_surat', name: 'h_kategori_surat'},
+                {data: 'klasifikasi', name: 'klasifikasi'},
+                {data: 'kepada', name: 'kepada'},
                 {data: 'perihal', name: 'perihal'},
                 {data: 'action', name: 'action'},
             ],

@@ -60,11 +60,10 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-12 mb-3">
-                            <label>Sifat</label>
+                            <label>Kategori</label>
                             <select class="form-control" name="kategori_surat" readonly>
-                                <option value="">-- Pilih Sifat --</option>
-                                <option value="segera">Segera</option>
-                                <option value="sangat-segera">Sangat Segera</option>
+                                <option value="">-- Pilih Kategori --</option>
+                                <option value="penting">Penting</option>
                                 <option value="biasa">Biasa</option>
                             </select>
                             <span class="text-danger">
@@ -77,15 +76,27 @@
                         <div class="col-md-12 col-12 mb-3">
                             <hr>
                         </div>
-                        <div class="col-md-3 col-12 mb-3">
-                        </div>
+                     
                         <div class="col-md-6 col-12 mb-3">
                             <label>Tindakan</label>
                             <select class="form-control selectpicker" name="tindakan">
                                 <option value="">-- Pilih Tindakan --</option>
-                                <option value="ditolak">Koreksi ke Petugas</option>
-                                <option value="diajukan">Diajukan</option>
+                                <option value="Diketahui dan File">Diketahui dan File</option>
+                                <option value="Proses Selesai">Proses Selesai</option>
+                                <option value="Teliti dan Pendapat">Teliti dan Pendapat</option>
+                                <option value="Buatkan Resume">Buatkan Resume</option>
+                                <option value="Edaran">Edaran</option>
+                                <option value="Sesuai Disposisi">Sesuai Disposisi</option>
+                                <option value="Bicarakan dengan Saya">Bicarakan dengan Saya</option>
                             </select>
+                            <span class="text-danger">
+                                <strong id="tindakan"></strong>
+                            </span>
+                        </div>
+
+                        <div class="col-md-6 col-12 mb-3">
+                            <label>Catatan</label>
+                            <textarea class="form-control" name="catatan" id="catatan" cols="30" rows="10"></textarea>
                             <span class="text-danger">
                                 <strong id="tindakan"></strong>
                             </span>

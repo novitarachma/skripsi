@@ -25,38 +25,23 @@ class HistoriSuratAdmin2Controller extends Controller
                 ->addIndexColumn()
                 //status
                 ->addColumn('h_status', function ($data) {
-                    if ($data->status == 'diverifikasi-sekdin') {
-                        $status     = '<a href="javascript:void(0)" class="badge badge-danger">Diverifikasi Sekdin</a>
-                        <br>
-                        ' . date('d-m-Y', strtotime($data->tanggal_konfirmasi_admin2)) . '
-                        ';
-                    }
                     if ($data->status == 'diajukan') {
-                        $status     = '<a href="javascript:void(0)" class="badge badge-danger">Menunggu</a>
-                        <br>
-                        ' . date('d-m-Y', strtotime($data->created_at)) . '
-                        ';
+                        $status     = '<a href="javascript:void(0)" class="badge badge-danger">Menunggu</a>';
                     }
                     if ($data->status == 'didisposisi') {
-                        $status     = '<a href="javascript:void(0)" class="badge badge-warning">Disposisi</a>
-                        <br>
-                        ' . date('d-m-Y', strtotime($data->tanggal_konfirmasi_admin3)) . '
-                        ';
+                        $status     = '<a href="javascript:void(0)" class="badge badge-warning">Disposisi</a>';
                     }
                     if ($data->status == 'dilaksanakan') {
                         $status     = '<a href="javascript:void(0)" class="badge badge-primary">Dilaksanakan</a>';
                     }
                     if ($data->status == 'diverifikasi-kasubag') {
-                        $status     = '<a href="javascript:void(0)" class="badge badge-warning">Diverfikasi Kasub</a>
-                        <br>
-                        ' . date('d-m-Y', strtotime($data->tanggal_konfirmasi_admin1)) . '
-                        ';
+                        $status     = '<a href="javascript:void(0)" class="badge badge-warning">Diverfikasi Kasubag</a>';
+                    }
+                    if ($data->status == 'diverifikasi-sekdin') {
+                        $status     = '<a href="javascript:void(0)" class="badge badge-danger">Diverifikasi Sekdin</a>';
                     }
                     if ($data->status == 'selesai') {
-                        $status     = '<a href="javascript:void(0)" class="badge badge-success">Selesai</a>
-                        <br>
-                        ' . date('d-m-Y', strtotime($data->tanggal_penyelesaian)) . '
-                        ';
+                        $status     = '<a href="javascript:void(0)" class="badge badge-success">Selesai</a>';
                     }
                     return $status;
                 })
