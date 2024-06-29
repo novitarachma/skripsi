@@ -18,7 +18,7 @@ class DisposisiSayaAdmin2Controller extends Controller
         //datatable
         if (request()->ajax()) {
             $data = SuratMasuk::with('jabatan_bidang')
-            ->where('jabatan_bidang_id', 3)
+            // ->where('jabatan_bidang_id', 3)
             ->where('status','didisposisi')
             ->get();
 
