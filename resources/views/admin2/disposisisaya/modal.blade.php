@@ -25,7 +25,7 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-12 mb-3">
-                            <label>Tanggal Surat</label>
+                            <label>Tanggal Pelaksana Kegiatan</label>
                             <input type="date" class="form-control" name="tanggal_surat" placeholder="Masukan Tanggal Surat" readonly>
                             <span class="text-danger">
                                 <strong id="tanggal_surat"></strong>
@@ -46,7 +46,7 @@
                             </span>
                         </div>
                         <div class="col-md-6 col-12 mb-3">
-                            <label>Kepada Yth</label>
+                            <label>Kepada</label>
                             <input class="form-control" name="kepada" placeholder="Masukan Kepada Yth" readonly>
                             <span class="text-danger">
                                 <strong id="kepada"></strong>

@@ -15,12 +15,12 @@
                     <div class="row">
                         <div class="col-md-6 mt-5 mb-3">
                             <div class="card">
-                                <div class="seo-fact sbg1">
-                                    <div class="p-4 d-flex justify-content-between align-items-center">
-                                        <div class="seofct-icon"><i class="ti-bar-chart-alt"></i>Total Surat Belum Terkonfirmasi</div>
-                                        <h2>{{ $total_surat_belum_terkonfirmasi }}</h2>
+                                <div class="seo-fact sbg3">
+                                <div class="p-4 d-flex justify-content-between align-items-center">
+                                        <div class="seofct-icon"><i class="ti-share-alt"></i> Surat Terdisposisi Saya</div>
+                                        <h2>{{ $total_surat_didisposisi }}</h2>
                                     </div>
-                                    <a href="{{ url('admin2/suratmasukadmin2') }}" class="btn btn-primary"
+                                    <a href="{{ url('admin2/disposisisayaadmin2') }}" class="btn btn-primary"
                                     style="background-color: #edf1f1; border-color: #edf1f1; color: black; border-radius: 5px; margin-left: 10px; margin-bottom: 10px; margin-top: 10px; width: 120px;"
                                     >Lihat Detail   <i class="ti-arrow-circle-right"></i></a>
                                     <canvas id="seolinechart1" height="50"></canvas>
@@ -29,7 +29,21 @@
                         </div>
                         <div class="col-md-6 mt-md-5 mb-3">
                             <div class="card">
-                                <div class="seo-fact sbg2">
+                            <div class="seo-fact sbg4">
+                                    <div class="p-4 d-flex justify-content-between align-items-center">
+                                        <div class="seofct-icon"><i class="ti-share"></i> Surat Selesai</div>
+                                        <h2>{{ $total_surat_selesai}}</h2>
+                                    </div>
+                                    <a href="{{ url('admin2/historisuratadmin2') }}" class="btn btn-primary"
+                                    style="background-color: #edf1f1; border-color: #edf1f1; color: black; border-radius: 5px; margin-left: 10px; margin-bottom: 10px; margin-top: 10px; width: 120px;"
+                                    >Lihat Detail   <i class="ti-arrow-circle-right"></i></a>
+                                    <canvas id="seolinechart2" height="50"></canvas>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3 mb-lg-0">
+                            <div class="card">
+                            <div class="seo-fact sbg2">
                                     <div class="p-4 d-flex justify-content-between align-items-center">
                                         <div class="seofct-icon"><i class="ti-briefcase"></i> Total Surat Diproses</div>
                                         <h2>{{ $total_surat_diproses }}</h2>
@@ -41,22 +55,8 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3 mb-lg-0">
-                            <div class="card">
-                                <div class="seo-fact sbg3">
-                                    <div class="p-4 d-flex justify-content-between align-items-center">
-                                        <div class="seofct-icon"><i class="ti-share-alt"></i> Surat Terdisposisi Saya</div>
-                                        <h2>{{ $total_surat_didisposisi }}</h2>
-                                    </div>
-                                    <a href="{{ url('admin2/disposisisayaadmin2') }}" class="btn btn-primary"
-                                    style="background-color: #edf1f1; border-color: #edf1f1; color: black; border-radius: 5px; margin-left: 10px; margin-bottom: 10px; margin-top: 10px; width: 120px;"
-                                    >Lihat Detail   <i class="ti-arrow-circle-right"></i></a>
-                                    <canvas id="seolinechart1" height="50"></canvas>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-md-6">
-                            <div class="card">
+                            <!-- <div class="card">
                                 <div class="seo-fact sbg4">
                                     <div class="p-4 d-flex justify-content-between align-items-center">
                                         <div class="seofct-icon"><i class="ti-share"></i> Surat Selesai</div>
@@ -67,7 +67,7 @@
                                     >Lihat Detail   <i class="ti-arrow-circle-right"></i></a>
                                     <canvas id="seolinechart2" height="50"></canvas>
                                 </div>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

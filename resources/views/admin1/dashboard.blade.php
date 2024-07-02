@@ -41,7 +41,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-6 mb-3 mb-lg-0">
+                        <!-- <div class="col-md-6 mb-3 mb-lg-0">
                             <div class="card">
                                 <div class="seo-fact sbg3">
                                     <div class="p-4 d-flex justify-content-between align-items-center">
@@ -54,7 +54,7 @@
                                     <canvas id="seolinechart1" height="50"></canvas>
                                 </div>
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-6">
                             <div class="card">
                                 <div class="seo-fact sbg4">
