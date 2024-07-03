@@ -156,10 +156,8 @@
                                             <td>Lampiran</td>
                                             <td>:</td>
                                             <td>
-                                                <a href="{{ url('lampiran/'.$surat->lampiran) }}"
-                                                    target="_blank">
-                                                    <img src="{{ url('lampiran/'.$surat->lampiran) }}"
-                                                        alt="" width="100px">
+                                                <a href="{{ url('lampiran/'.$surat->lampiran) }}" class="text-sm">
+                                                    <small>{{ $surat->lampiran }}</small>
                                                 </a>
                                             </td>
                                         </tr>
